@@ -5,13 +5,33 @@
 </head>
 <body>
 
+<p></p>
+
 <script>
 	
+	//setTimeout
 	var timeID = setTimeout(showText, 5000);
 
+	document.writeln("<p>//setTimeout</p>");
+	
 	function showText(){
-		document.write("Some text here after 5 seconds.");
+		document.writeln("<p>Some text here after 5 seconds.</p>");
 	}
+
+	//setInterval
+	function intervalText(){
+		document.writeln("<p>Interval text now, after 2 sec.</p>");
+	}
+
+	//var intervalID = setInterval(intervalText, 2000);
+
+	
+	function drawText() {
+		document.querySelector("p").textContent += "#\n";
+	}
+	
+	var intervalID = setInterval(drawText, 1000);
+
 
 </script>
 
