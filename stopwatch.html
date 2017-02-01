@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+	function stopWatch() {
+	var startTime = Date.now();
+	
+		function getDelay() {
+			var elapsedTime = Date.now() - startTime;
+			alert("it took " + elapsedTime + " milliseconds to process. ms = one thousandth of a second.");
+		}
+	
+		return getDelay;
+	}
+
+	var timer = stopWatch();
+	
+	// do something that takes some time
+	for (var i = 0; i < 10000000; i++) {
+		var foo = Math.random() * 10000;
+	}
+	
+	// call the returned function
+	timer();
+
+</script>
+
+<img src="img/stopwatch1.png" width="500" border="1">
+<img src="img/stopwatch2.png" width="500" border="1">
+
+</body>
+</html>
