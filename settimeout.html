@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>Detecting Inactivity: Let's define "stops interacting" as when a user hasn't fiddled with the mouse, keyboard, or the screen (by touching / tapping) for a period of time.</p>
+
+<script>
+	
+	var timeoutID;
+ 
+	function setup() {
+	    this.addEventListener("mousemove", resetTimer, false);
+	    this.addEventListener("mousedown", resetTimer, false);
+	    this.addEventListener("keypress", resetTimer, false);
+	    this.addEventListener("DOMMouseScroll", resetTimer, false);
+	    this.addEventListener("mousewheel", resetTimer, false);
+	    this.addEventListener("touchmove", resetTimer, false);
+	    this.addEventListener("MSPointerMove", resetTimer, false);
+	 
+	    startTimer();
+	}
+
+	setup();
+ 
+	function startTimer() {
+	    // wait 2 seconds before calling goInactive
+	    timeoutID = window.setTimeout(goInactive, 2000);
+	    //document.write("start-timer&inactive ");
+	}
+ 
+	function resetTimer(e) {
+	    window.clearTimeout(timeoutID);
+	 	goActive();
+	 	//document.write("reset-timer&active ");
+	}
+ 
+	function goInactive() {
+	    // do something
+	    console.log("inactive");
+	}
+ 
+	function goActive() {
+	    // do something
+	    console.log("goactive");
+	         
+	    startTimer();
+	}
+
+</script>
+
+</body>
+</html>
