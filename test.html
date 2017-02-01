@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+	var myText;
+	var myText = "Madis";
+	document.write(myText);
+
+	function sayHello(){
+		document.write(" Hello!");
+	}
+
+	sayHello();
+
+	speedLimit = 90;
+
+	//functions & operators
+	function amISpeeding(speed) {
+		if (speed >= speedLimit) {
+			alert("Yes. You are speeding.");
+		} else {
+		alert("No. You are not speeding. What's wrong with you?");
+		}
+	}
+
+	//amISpeeding(91);
+
+	var myArray = [" one", " two", " three"];
+
+	var howManyTimes = 10;
+	for(var i = 0; i < howManyTimes; i++){
+		if(i % 2 == 0){
+			document.writeln(myArray[i]);
+			document.write("continue");
+			continue;
+		}
+		sayHello();
+	}
+
+</script>
+
+<hr>
+<img src="img/else-if.png" width="400" border="1">
+<img src="img/switch.png" height="400" border="1">
+
+</body>
+</html>
