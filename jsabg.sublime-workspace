@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"d",
+				"div\tTag"
+			],
+			[
+				"in",
+				"intervalID"
+			],
+			[
+				"inter",
+				"intervalText"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
 				"clo",
 				"color"
 			],
@@ -52,10 +72,32 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "stopwatch.html",
 			"settings":
 			{
-				"buffer_size": 7,
+				"buffer_size": 701,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "objects.html",
+			"settings":
+			{
+				"buffer_size": 103,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<title></title>\n</head>\n<body>\n\n<script>\n\t\n\t//create an array\n\tvar groceries =[];\n\n\tvar groceries2 = [\"Milk\", \"Eggs\", \"Frosted Flakes\", \"Salami\",\n\t\"Juice\"];\n\n\t//add items to the end\n\tgroceries2.push = \"Coffee\";\n\n\tgroceries2.unshift(\"Bananas\");\n\n</script>\n\n</body>\n</html>",
+			"file": "arrays.html",
+			"file_size": 265,
+			"file_write_time": 131304482902035503,
+			"settings":
+			{
+				"buffer_size": 302,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -90,8 +132,20 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/wamp/www/jsabg"
+	],
 	"file_history":
 	[
+		"/C/wamp/www/jsabg/closures.html",
+		"/C/wamp/www/jsabg/hoisting.html",
+		"/C/wamp/www/jsabg/css-animation.html",
+		"/C/wamp/www/jsabg/settimeout.html",
+		"/C/wamp/www/jsabg/timers.html",
+		"/C/wamp/www/jsabg/README.md",
+		"/C/wamp/www/jsabg/somefile",
+		"/C/wamp/www/gittest/jsabg/timers.html",
 		"/C/wamp64/www/shop/signup.php",
 		"/C/wamp64/www/shop/addcustomer.php",
 		"/C/wamp64/www/shop/js/checkform.js",
@@ -193,29 +247,85 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "stopwatch.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7,
+						"buffer_size": 701,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								701,
+								701
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "objects.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								103,
+								103
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "arrays.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -304,7 +414,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 210.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
