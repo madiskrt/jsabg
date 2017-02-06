@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
-				"st",
-				"style\tTag"
+				"in",
+				"input\tTag"
 			],
 			[
 				"d",
-				"div\tTag"
+				"dd\tTag"
 			],
 			[
-				"in",
-				"intervalID"
+				"body",
+				"bodyElement"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"st",
+				"style\tTag"
 			],
 			[
 				"inter",
@@ -44,10 +60,6 @@
 				"color"
 			],
 			[
-				"bor",
-				"border-collapse"
-			],
-			[
 				"_SE",
 				"_SESSION"
 			],
@@ -72,31 +84,19 @@
 	"buffers":
 	[
 		{
-			"file": "stopwatch.html",
+			"file": "events2.html",
 			"settings":
 			{
-				"buffer_size": 701,
+				"buffer_size": 597,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "objects.html",
+			"file": "mouse2.html",
 			"settings":
 			{
-				"buffer_size": 103,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<!DOCTYPE html>\n<html>\n<head>\n\t<title></title>\n</head>\n<body>\n\n<script>\n\t\n\t//create an array\n\tvar groceries =[];\n\n\tvar groceries2 = [\"Milk\", \"Eggs\", \"Frosted Flakes\", \"Salami\",\n\t\"Juice\"];\n\n\t//add items to the end\n\tgroceries2.push = \"Coffee\";\n\n\tgroceries2.unshift(\"Bananas\");\n\n</script>\n\n</body>\n</html>",
-			"file": "arrays.html",
-			"file_size": 265,
-			"file_write_time": 131304482902035503,
-			"settings":
-			{
-				"buffer_size": 302,
+				"buffer_size": 995,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -138,6 +138,22 @@
 	],
 	"file_history":
 	[
+		"/C/wamp/www/jsabg/events.html",
+		"/C/wamp/www/jsabg/dom4fromscratch.html",
+		"/C/wamp/www/jsabg/dom3.html",
+		"/C/wamp/www/jsabg/dom.html",
+		"/C/wamp/www/jsabg/css/style1.css",
+		"/C/wamp/www/jsabg/iffy.html",
+		"/C/Users/Kasutaja/Desktop/eek/Veebiprogrammeerimine/170204 praks veebiproge märkmed.txt",
+		"/C/wamp/www/jsabg/sandbox.html",
+		"/C/wamp/www/jsabg/_blank.html",
+		"/C/Users/Kasutaja/Desktop/eek/Kasutajaliidese disain (UI-design)/170202 loeng uid.txt",
+		"/C/Users/Kasutaja/Desktop/eek/Projektijuhtimine/170203 loeng proj.txt",
+		"/C/wamp/www/jsabg/arrays.html",
+		"/C/wamp/www/jsabg/numbers.html",
+		"/C/wamp/www/jsabg/objects.html",
+		"/C/wamp/www/jsabg/prototype.html",
+		"/C/wamp/www/jsabg/stopwatch.html",
 		"/C/wamp/www/jsabg/closures.html",
 		"/C/wamp/www/jsabg/hoisting.html",
 		"/C/wamp/www/jsabg/css-animation.html",
@@ -247,52 +263,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "stopwatch.html",
+					"file": "events2.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 701,
+						"buffer_size": 597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								701,
-								701
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "objects.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 103,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								103,
-								103
+								579,
+								579
 							]
 						],
 						"settings":
@@ -307,20 +295,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "arrays.html",
+					"buffer": 1,
+					"file": "mouse2.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 302,
+						"buffer_size": 995,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								254,
-								254
+								214,
+								214
 							]
 						],
 						"settings":
@@ -414,7 +402,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 210.0,
+	"side_bar_width": 177.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

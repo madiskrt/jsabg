@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		img {width: 500px; border-style: solid; border-width: 1px;}
+	</style>
+	<title></title>
+</head>
+<body>
+
+<script>
+	
+	(function (){
+		var message = "smth";
+		console.log(message);
+	})();
+
+	function quotatious(names) {
+	var quotes = [];
+	for (var i = 0; i < names.length; i++) {
+	(function(index) {
+	var theFunction = function() {
+	return "My name is " + names[index] + "!";
+	}
+	quotes.push(theFunction);
+	})(i);
+	}
+	return quotes;
+	}
+
+	// our list of names
+	var people = ["Tony Stark", "John Rambo", "James Bond", "Rick James"];
+	// getting an array of functions
+	var peopleFunctions = quotatious(people);
+	// get the first function
+	var person = peopleFunctions[0];
+	// execute the first function
+	alert(person());
+
+
+	//make variables private example
+	var awesomeSauce = (function () {
+	var secretCode = "Zorb!";
+	function privateCheckCode(code) {
+	if (secretCode == code) {
+	alert("You are awesome!");
+	} else {
+	alert("Try again!");
+	}
+	}
+	// the public method we want to return
+	return {
+	checkCode: privateCheckCode
+		};
+	})();
+
+	var foo = Object.create(awesomeSauce);
+	alert(foo.secretCode); // undefined
+
+</script>
+
+<img src="img/IIFE.jpg" width="500" border="1">
+<img src="img/IIFE-private.jpg">
+
+</body>
+</html>

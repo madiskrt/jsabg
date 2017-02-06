@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<title></title>
+</head>
+<body>
+
+<img src="img/createElement.jpg">
+<img src="img/insert-elem-to-end.jpg">
+<img src="img/insertAfter-custom-func.jpg">
+<img src="img/cloneNode.jpg">
+
+<script>
+	
+	//creates a "floating" element, as it yet has no place in the DOM
+	var newElement = document.createElement("p");
+	newElement.textContent = "I exist entirely in your imagination.";
+	//now we add new element to parent - body
+	document.body.appendChild(newElement);
+
+	var newElement2 = document.createElement("p");
+	newElement2.textContent = "I exist entirely in your imagination (2x)";
+	var imgElement = document.querySelector("img");
+	document.body.insertBefore(newElement2, imgElement);
+
+</script>
+
+<div id="myDiv1">myDiv1</div>
+<div id="myDiv2" class="bar foo zorb">div with id myDiv2</div>
+
+</body>
+</html>

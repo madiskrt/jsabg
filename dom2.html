@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+		img {width: 500px; border-style: solid; border-width: 1px;}
+		.baz {background-color: Yellow;}
+		.bar {font-weight: bold;}
+	</style>
+	<title></title>
+</head>
+<body>
+<div></div>
+<div id="myDiv" class="bar foo zorb">div with id myDiv</div>
+
+<img src="img/Siblings-Parents.jpg">
+<img src="img/Navigating-via-children.jpg">
+<img src="img/Accessing-All-Child-Elements.jpg">
+<img src="img/Walking-the-DOM.jpg">
+<img src="img/DOM2.jpg">
+<div></div>
+
+<script>
+	
+	var myElement = document.querySelector("div");
+	myElement.textContent = "Hello";
+
+	//Setting the Style Directly
+	myElement.style.backgroundColor = "Green";
+
+	//Adding and Removing Classes Using classList
+	var divElement = document.querySelector("#myDiv");
+	divElement.classList.add("baz");
+
+	var bodyElement = document.body;
+		for (var i = 0; i < bodyElement.children.length; i++) {
+			var childElement = bodyElement.children[i];
+			console.log(childElement.tagName);
+		}
+
+	function theDOMElementWalker(node) {
+	if (node.nodeType == 1) {
+			// do something with the node
+			console.log(node);
+			
+			node = node.firstChild;
+
+			while (node) {
+			theDOMElementWalker(node);
+			node = node.nextSibling;
+
+			}
+		}
+	}
+
+	var frst = document.querySelector("#myDiv");
+	theDOMElementWalker(frst);
+
+</script>
+
+</body>
+</html>

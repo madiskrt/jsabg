@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+		img {width: 500px; border-style: solid; border-width: 1px;}
+	</style>
+	<title></title>
+</head>
+<body>
+
+<div id="main">
+<div class="pictureContainer">
+<img class="theImage" src="smiley.png" height="30"
+width="150" />
+</div>
+<div class="pictureContainer">
+<img class="theImage" src="tongue.png" height="30"
+width="150" />
+</div>
+<div class="pictureContainer">
+<img class="theImage" src="meh.png" height="30"
+width="150" />
+</div>
+<div class="pictureContainer">
+<img class="theImage" src="sad.png" height="30"
+width="150" />
+</div>
+<p>check console =></p>
+</div>
+
+<script>
+	
+	//var images = document.querySelectorAll(".theImage");
+	var images = document.querySelectorAll("img");
+	//loop through an array of images
+	for (var i = 0; i < images.length; i++) {
+	var image = images[i];
+	console.log(image.getAttribute("src"));
+	}
+
+</script>
+
+<img src="img/DOM.jpg">
+
+</body>
+</html>

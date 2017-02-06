@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<title></title>
+</head>
+<body>
+
+<input type="button" id="myButton" name="" value="Click here">
+<img src="img/mouse.jpg">
+
+<script>
+	
+	var button = document.querySelector("#myButton");
+	
+	button.addEventListener("click", doSomething, false);
+	function doSomething(e) {
+	console.log("Mouse clicked on something!");
+	}
+
+	//dblclick
+	button.addEventListener("dblclick", doSomething2, false);
+	function doSomething2(e) {
+	console.log("Mouse clicked on something...twice!");
+	}
+
+	//some mouseovers
+	var button = document.querySelector("#myButton");
+	button.addEventListener("mouseover", hovered, false);
+	button.addEventListener("mouseout", hoveredOut, false);
+	function hovered(e) {
+		console.log("Hovered!");
+	}
+	function hoveredOut(e) {
+		console.log("Hovered Away!");
+	}
+
+	button.addEventListener("mousemove", mouseIsMoving, false);
+	function mouseIsMoving(e) {
+		console.log("Mouse is on the run!");
+	}
+
+	document.addEventListener("contextmenu", hideMenu, false);
+	function hideMenu(e) {
+		e.preventDefault();
+	}
+	
+</script>
+
+</body>
+</html>
